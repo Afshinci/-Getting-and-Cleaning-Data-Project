@@ -6,35 +6,15 @@ This repository contains an R-scrpit called run_analysis.R that creates a tidy d
 two different data sets: "Test set" and "Training set" which are obtained from 
 
 "Getting and Cleaning Data" course of "Data science specialization" in Coursera
-* The first step it to merge traning set and test set to create a merged data set
 
-We read the required datasets with "read.table" function 
+There is also a codebook.md file which describes all of the steps taken to create a tidy 
 
-and then using "cbind" and "rbind" functions we merge these datasets
-* In the second step involves extracting only the measurements on the mean(mean()) 
-and standard deviation(std()) for each measurement.
+data set in detail.
 
-First, The names of the features are extracted from "features.txt" file 
+## run_analysis.R script
+In this script we follow five steps to create a tidy set which means that
+* Selected mean and standard deviation of each measurement is in one column.
+* Each different observation of that variable for each subject and each activity is in a different row.
+* The variable names are human readable.
 
-Then, using "grep" function we find the indices of the measurements on the mean and 
-
-standard deviation for each variable
-* In the third step we use descriptive activity names to name the activities 
-in the dataset
-* In the fourth step we label the dataset with descriptive variable names 
-For instance we use Freq instead of f to say that the signal is in the frequency domain
-
-Using "gsub" function we replace variable names with descriptive names
-
-Then we use these names as column names for our dataset using "colnames" function 
-* In the fifth step we create a final independent dataset with the average of each
-variable for each activity and each subject
-
-Using "dplyr" package, we first group our data by Subjects and then by activities
-
-and then we use summarize_all function to obtain final tiny data and end with 
-
-only one observation(the mean) for each subject-activity pair
-(30 subjects*6 activities = 180 observations in total)
-* Finally, to read the tidy data again so as to check whether or not it is tidy
-we use "read.table" function
+## Codebook.md 
