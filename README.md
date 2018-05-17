@@ -18,3 +18,14 @@ In this script we follow five steps to create a tidy set which means that
 * The variable names are human readable.
 
 ## Codebook.md 
+This file contains all of the steps taken to create a tidy data set. These steps are:
+* Merging the training and the test sets to create one data set
+* Extracting only the measurements on the mean and standard deviation for each measurement 
+* Using descriptive activity names to name the activities in the data set
+* Appropriately labeling the data set with descriptive variable names
+* Creating and independent tidy data set with the average of each variable for each activity and each subject
+
+## Reading the tidy data set
+To read the tidy data set one can use the following commands in R:
+data <- read.table(file_path, header = TRUE) 
+View(data)
