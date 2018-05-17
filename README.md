@@ -27,5 +27,7 @@ This file contains all of the steps taken to create a tidy data set. These steps
 
 ## Reading the tidy data set
 To read the tidy data set one can use the following commands in R:
+
 data <- read.table(file_path, header = TRUE) 
+
 View(data)
