@@ -3,8 +3,7 @@
 ## Experimental design and background: 
 Today, having data about different activities of people leads to useful data analyses that can be used
 to infer important information. In this experiment 30 volunteers are involved, each performed six activities(WALKING, WALKING_UPSTAIRS,
-SITTING, STANDING, LAYING) wearing a smartphone on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear 
-acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+WALKING_DOWNSTAIRS,SITTING, STANDING, LAYING) wearing a smartphone on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 
 ## Raw Data: 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width
