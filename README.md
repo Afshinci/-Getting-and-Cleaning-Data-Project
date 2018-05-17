@@ -21,15 +21,13 @@ Then, using "grep" function we find the indices of the measurements on the mean 
 standard deviation for each variable
 * In the third step we use descriptive activity names to name the activities 
 in the dataset
-* In the fourth step we label the dataset with descriptive variable names, for instance
-
-we use Freq instead of f to say that the signal is in the frequency domain
+* In the fourth step we label the dataset with descriptive variable names 
+For instance we use Freq instead of f to say that the signal is in the frequency domain
 
 Using "gsub" function we replace variable names with descriptive names
 
 Then we use these names as column names for our dataset using "colnames" function 
 * In the fifth step we create a final independent dataset with the average of each
-
 variable for each activity and each subject
 
 Using "dplyr" package, we first group our data by Subjects and then by activities
